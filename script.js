@@ -16,7 +16,7 @@ function getCatImg() {
     fetch(url)
         .then(response => response.json)
         .then(cat => {
-            catImg.innerHTML = `<img src=${data.file}`
+            catImg.innerHTML = `<img src="${cat.url}" />`
 
         })
 }
